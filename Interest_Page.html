@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>25-26 Winter Interest Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Blue Section */
+    .blue-section {
+      background-color: #1f72f0;
+      height: 33%;
+      width: 100%;
+    }
+
+    /* Title above the image */
+    .title {
+      font-size: 2rem;
+      font-weight: bold;
+      text-align: center;
+      color: black;
+      padding-top: 20px;
+    }
+
+    /* Image Section with Gradient */
+    .image-container {
+      width: 100%;
+      height: auto;
+      background: linear-gradient(to bottom, #1f72f0 0%, #000 100%);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding-bottom: 20px;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+      object-fit: contain;
+      border: 2px solid black;
+    }
+
+    /* Paragraph below the image with pink font */
+    .paragraph {
+      color: pink;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      padding: 0 15px;
+      max-width: 90%;
+    }
+
+    /* Black Section */
+    .black-section {
+      background-color: #000;
+      width: 100%;
+      padding: 20px 0;
+    }
+
+    /* Google Form iframe */
+    iframe {
+      border: none;
+      width: 90%;
+      max-width: 800px;
+      height: 900px;
+      margin: 20px auto;
+      display: block;
+    }
+
+    /* Media Queries for Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .blue-section, .image-container, .black-section {
+        height: auto;
+      }
+
+      .title {
+        font-size: 1.5rem;
+      }
+
+      .paragraph {
+        font-size: 1rem;
+      }
+
+      img {
+        max-width: 45%;
+      }
+
+      iframe {
+        height: 1200px; /* Increase height for mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Blue Section -->
+  <div class="blue-section"></div>
+
+  <!-- Image Section with Title and Paragraph -->
+  <div class="image-container">
+    <h2 class="title">25-26 Winter Interest Form</h2>
+    <img src="https://i.postimg.cc/1Xr24rGG/IMG-3214-1.png" alt="Summer 2025 Registration Image">
+    <p class="paragraph">
+      The 25-26 Winter Interest Form is now here! Contact us at our Instagram after filling out the interest form to get accepted into the squad and receive the registration invitation.
+    </p>
+
+  </div>
+
+  <!-- Black Section with Google Form -->
+  <div class="black-section">
+    <iframe 
+      src="https://docs.google.com/forms/d/e/1FAIpQLSf2SOUe81fOMX-oGjqw9BoLI9KmLlW1GAMMG47Ri1HaJ1zW-Q/viewform?embedded=true" 
+      width="100%" 
+      height="900">
+      Loading…
+    </iframe>
+  </div>
+
+</body>
+</html>
