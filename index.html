@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Welcome to International F.C</title>
+  <style>
+    body {
+      margin: 0;
+      height: 100vh;
+      background: linear-gradient(to bottom, #1f72f0 0%, #000 100%);
+      font-family: Arial, sans-serif;
+    }
+
+    .navbar {
+      background-color: #1f72f0;
+      padding: 10px 20px;
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+    }
+
+    .navbar a {
+      color: black;
+      font-size: 1.2rem;
+      text-decoration: none;
+      margin-right: 20px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .navbar a:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #1f72f0;
+      min-width: 160px;
+      z-index: 1;
+      border-radius: 8px;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+
+    .dropdown-content a {
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      color: black;
+      font-size: 1.2rem;
+      border-radius: 8px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: black;
+      color: white;
+    }
+
+    .main-content {
+      margin-top: 80px;
+      width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .content {
+      flex: 1 1 55%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .links-container {
+      flex: 0 1 45%;
+      background-color: black;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    h1 {
+      color: black;
+      font-size: 2.5rem;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .link-box, .link-box-instagram, .link-box-tiktok {
+      width: 250px;
+      padding: 15px;
+      background-color: #1f72f0;
+      color: black;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      border-radius: 12px;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .link-box img, .link-box-instagram img, .link-box-tiktok img {
+      height: 30px;
+      width: 30px;
+      object-fit: contain;
+    }
+
+    .youtube-logo {
+      max-width: 30px;
+      max-height: 30px;
+      width: auto;
+      height: auto;
+    }
+
+    .link-box:hover, .link-box-instagram:hover, .link-box-tiktok:hover {
+      background-color: #0000FF;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+      .links-container {
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .link-box, .link-box-instagram, .link-box-tiktok {
+        width: 180px;
+        padding: 12px 10px;
+        font-size: 1rem;
+      }
+
+      .link-box img, .link-box-instagram img, .link-box-tiktok img {
+        height: 25px;
+        width: 25px;
+      }
+
+      h1 {
+        font-size: 2rem;
+      }
+
+      .navbar {
+        padding: 10px;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+      .navbar a {
+        font-size: 1rem;
+      }
+
+      .dropdown-content {
+        min-width: 120px;
+      }
+
+      .dropdown-content a {
+        font-size: 1rem;
+        padding: 10px 12px;
+      }
+    }
+
+    .contact-info {
+      color: white;
+      font-size: 1.2rem;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 20px;
+      padding: 0 15px;
+    }
+
+    .contact-info span {
+      display: block;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="navbar">
+    <a href="index.html">Home</a>
+    <div class="dropdown">
+      <a href="#">Pages</a>
+      <div class="dropdown-content">
+        <a href="registration.html">2025 Summer Registration</a>
+        <a href="store.html">Store</a>
+        <a href="roster.html">Current Roster</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="main-content">
+    <div class="content">
+      <h1>Welcome to International F.C</h1>
+      <img src="https://i.postimg.cc/50hQhpks/Untitled161-20241001142150-removebg-preview.png" height="550" alt="International F.C. Logo" />
+    </div>
+
+    <div class="links-container">
+      <a class="link-box" href="https://www.youtube.com/@fcinternational_" target="_blank">
+        <img class="youtube-logo" src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo" />
+        YouTube
+      </a>
+
+      <a class="link-box-instagram" href="https://www.instagram.com/fcinternational_?igsh=MXBuYTJubmRkaGs3dQ==" target="_blank">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo" />
+        Instagram
+      </a>
+
+      <a class="link-box-tiktok" href="https://www.tiktok.com/@international.fc8?_t=ZP-8vkOBasIFWI&_r=1" target="_blank">
+        <img src="https://www.tiktok.com/favicon.ico" alt="TikTok Logo" />
+        TikTok
+      </a>
+    </div>
+  </div>
+
+  <div class="contact-info">
+    <p>Need help or have questions, DM us at:</p>
+    <span>Email: Internationalfc75@gmail.com</span>
+    <span>Owner Phone Number: +1 (571) 466-9758</span>
+  </div>
+
+</body>
+</html>
+
+
